@@ -12,8 +12,6 @@ function Counter(props) {
 }
 
 function mapStateToProps(state) {
-
-  console.log(state)
   return {
     counter: state.counter2.counter
   }
