@@ -13,6 +13,14 @@ export function sub() {
   }
 }
 
+export function asyncAdd(num) {
+  return (dispatch) => {
+    setTimeout(() => {
+      dispatch(add(num))
+    }, 3000)
+  }
+}
+
 export function add2(num) {
   return {
     type: ADD2,
